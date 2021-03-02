@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Adventure Trip-let's Rock it with the Best</title>
+    <link rel="stylesheet" href="adventure.css">
+
+</head>
+
+<body>
+    <!-- homepage -->
+    <header class="head"> 
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#abt">AboutUs</a></li>
+                <li><a href="#">Gallary</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="heading1">
+            <h1><span>Th</span>e <span>Ad</span>venture <span>Tr</span>ip</h1>
+            <h3 class="smallsec">
+                Let's explore the world.
+            </h3>
+        </div>
+    </header>
+    <!-- aboutus page -->
+    <section class="aboutus" id="abt">
+        <div class="heading">
+            <h1><span>A</span>b<span>o</span>u<span>t</span> Us</h1>
+
+        </div>
+        <div class="boxtext">
+            <p>
+                Adventure Alternative is an independent adventure travel company which was started in 1991 by adventurer
+                and
+                mountaineer Gavin Bate, and developed over many years of organising and guiding expeditions around the
+                world.<br>
+                <br>
+                It is an established guiding company with an emphasis on responsible travel and a high level of
+                knowledge
+                and experience. We have run trips to the summit of Mount Everest and to the middle of the Sahara Desert!
+                We offer many types of trips of all levels from mountains to jungle, and desert to arctic regions but
+                the
+                majority are feasible treks and adventure holidays for the enthusiastic hiker.
+
+            </p>
+
+        </div>
+    </section>
+    <!-- gallery section -->
+    <section class="gallery">
+        
+        <!-- image slider start -->
+        <div class="slider">
+            <div class="slides">
+                <!-- radio button start -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- radio button end -->
+                <!-- slide image start -->
+                <div class="slide first">
+                    <img src="image/eventbg1.jpg" alt="">
+                </div>
+                <div class="slide ">
+                    <img src="image/eventbg2.jpg" alt="">
+                </div>
+                <div class="slide ">
+                    <img src="image/eventbg3.jpg" alt="">
+                </div>
+                <div class="slide ">
+                    <img src="image/eventbg4.jpg" alt="">
+                </div>
+           
+                <!-- slide image end -->
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- automatic navigation end -->
+            </div>
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
+        </div>
+
+        <!-- image slider end -->
+        <script type ="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+        </script>
+
+        
+
+    </section>
+</body>
+
+</html>
